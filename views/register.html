@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Document</title>
+</head>
+<body class="register__body">
+    <header class="header">
+        <div class="main__header">
+         <div class="logo">
+            <a href="/"><img src="images/logo-mercado-liebre.svg" alt="Mercado liebre LOGO"></a>
+        </div>
+        <div class="search__lupa">
+         <input class="search__input" type="text" name="busqueda" placeholder="Busca cualquier producto...">
+         <i class="fa-solid fa-magnifying-glass"></i>
+         </div>
+         <h4 class="link__cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</h4>
+        </div>
+        
+        <nav class="header__nav">
+         <ul class="main__nav">
+             <li><a href="">Ofertas</a></li>
+             <li><a href="">Tiendas Oficiales</a></li>
+             <li><a href="">Vender</a></li>
+             <li><a href="">Ayuda</a></li>
+         </ul>
+         <ul class="login__nav">
+             <li><a href="/register">Crea tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+             <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+             <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+         </ul>
+        </nav>
+        <div class="burger__menu">
+             <i class="fas fa-bars"></i>
+         </div>
+     </header>
+
+<main class="register__container">
+    <form class="form" action="/registro" method="POST">
+                <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required>
+                <input type="text" name="username" id="username" placeholder="Nombre de usuari@" pattern="[A-Za-z]{4-12}" title="Maximo de 12 caracteres" required> 
+                <input type="mail" name="email" id="email" placeholder="E-mail" required> 
+                <label for="birthdate" class="title__label">Fecha de nacimiento</label>
+                <input type="date" name="birthdate" id="birthdate" max="2005-07-18" required>
+                <input type="text" name="adress" id="adress" placeholder="Domicilio">
+                <label for="profile" class="title__label">Perfil de usuario</label>
+                <div class="user__profile">
+                    <input type="radio" name="profile" id="profile" value="Compra" checked>
+                    <label for="profile">Compra</label>
+                    <input type="radio" name="profile" id="profile" value="Venta">
+                    <label for="profile">Venta</label>
+                </div>
+                <label for="interest" class="title__label">Categorías de interés</label>
+                    <div class="user__interest">
+                    <div class="input__div">
+                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Electro">
+                        <label for="interest" class="interest__label">Electro</label>
+                    </div>
+                    <div class="input__div">
+                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Moda">
+                        <label for="interest" class="interest__label">Moda</label>
+                    </div>
+                    <div class="input__div">
+                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Hogar">
+                        <label for="interest" class="interest__label">Hogar</label>
+                    </div><div class="input__div">
+                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Jugueteria">
+                        <label for="interest" class="interest__label">Juguetería</label>
+                    </div>
+                    <div class="input__div">
+                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Vida sana">
+                        <label for="interest" class="interest__label">Vida sana</label>
+                    </div>
+                </div>
+                <label for="avatar" class="user__avatar">Foto de usuario</label>
+                <input type="file" name="avatar" id="avatarBtn" accept="jpg png">
+                <label for="avatarBtn" class="file__btn">Cargar Imagen</label>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="password" name="password" placeholder="Confirmar contraseña" required>
+                <input type="submit" value="Enviar" id="register__submit">
+            </form>
+        </main>
+        <footer class="footer">
+            <section class="footer__section">
+                <div class="credit__card">
+                    <i class="fa-solid fa-credit-card"></i><h5>Pagá con tarjeta o en efectivo</h5>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </div>
+                <div class="linea__izquierda"></div>
+                <div class="gift"><i class="fa-solid fa-gift">
+                    </i><h5>Envío gratis desde $ 2.500</h5>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                </div>
+                <div class="linea__derecha"></div>
+                <div class="user__shield">
+                    <i class="fa-solid fa-user-shield"></i><h5></i>Seguridad, de principio a fin</h5>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p></div>
+                <h5 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+            </section>
+        </footer>
+        <script src="https://kit.fontawesome.com/5a6beb288f.js" crossorigin="anonymous"></script>
+    </body>
+</html>

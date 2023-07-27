@@ -1,0 +1,134 @@
+@import url("style.css");
+
+/* ->Formulario de Registro <- */
+body.register__body {
+    background-color: var(--gris-claro);
+}
+
+.register__container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 0;
+    border: 2px solid var(--amarillo-sol);
+}
+
+.register__container .form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.register__container .title__label{
+    font-weight: 700;
+    font-size: 14px;
+}
+.form input {
+    margin: 16px 0;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+}
+.title__label,
+.interest__label {
+    margin: 16px 0;
+    border: none;
+}
+.user__profile {
+    display: flex; 
+    width: 50%;
+}
+.user__profile label{
+    margin: auto;
+}
+.user__avatar{
+    font-weight: 700;
+}
+input[type="file"]{
+    display: none;
+}
+.file__btn{
+    display: flex;
+    background-color: var(--celeste-azul);
+    color: var(--gris-claro);
+    width: 50%;
+    justify-content: center;
+    filter: drop-shadow(1px 4px 6px #666);
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+.file__btn:active{
+    transform: scale(0.95);
+}
+.user__interest .input__div{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+}
+.form #register__submit{
+    background-color: var(--celeste-azul);
+    align-self: center;
+    width: 50%;
+    color: #fff;
+}
+
+/* -> Formulario de Login <- */
+body.body__login{
+    background-color: var(--gris-claro);
+}
+form.login__form {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.login__form div.login__input{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 14px auto;
+    padding: 10px;
+}
+.login__input input{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.login__form #login-submit {
+    display: flex;
+    margin: 8px auto;
+    width: 40%;
+    padding: 8px 0;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: var(--celeste-azul);
+    transition: all 0.3s;
+}
+
+@media (min-width:768px) {
+     .login__form div.login__input{
+        width: 50%;
+    }
+    .login__form #login-submit{
+        width: 20%;
+    }
+    .register__body {
+        background-color: #fff;
+    }
+    .register__container {
+        width: 60%;
+    }
+}
+@media (min-width: 1024px) {
+    .login__form #login-submit:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+}
+}
