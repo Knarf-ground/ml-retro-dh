@@ -26,8 +26,7 @@ app.get("/login", (req,res)=>{
     res.sendFile(vista);
 })
 
-// ->serv0
+// -> servidor levantado <-
 
-app.listen(3010,()=>{
-    console.log("funcionanado en el puerto 3010");
-})
+const port = process.env.PORT || 3001;
+app.listen(port,()=> console.log(`servidor corriendo en el puerto ${port}`));
