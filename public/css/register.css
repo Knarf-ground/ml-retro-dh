@@ -48,33 +48,41 @@ input[type="file"]{
     display: none;
 }
 .file__btn{
-    display: flex;
     background-color: var(--celeste-azul);
     color: var(--gris-claro);
-    width: 50%;
-    justify-content: center;
-    filter: drop-shadow(1px 4px 6px #666);
-    letter-spacing: 1.1px;
-    cursor: pointer;
+    font-size: 8px;
+    width: 40%;
+    text-align: center;
+    filter: drop-shadow(1px 2px 6px #666);
+    letter-spacing: 0.5px;
     transition: all 0.3s;
     padding: 6px 10px;
-    border-radius: 4px;
+    border-radius: 2px;
     margin-top: 4px;
 }
-.file__btn:active{
-    transform: scale(0.95);
-}
+
 .user__interest .input__div{
     display: flex;
     width: 75%;
     margin: 0 auto;
 }
-.form #register__submit{
-    background-color: var(--celeste-azul);
-    align-self: center;
-    width: 50%;
+form.form .register__btn {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
     color: #fff;
 }
+.register__btn [type="submit"],
+.register__btn [type="reset"] {
+    background-color: var(--celeste-azul);
+    padding: 5px 10px;
+    width: 45%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
 
 /* -> Formulario de Login <- */
 body.body__login{
@@ -116,8 +124,8 @@ form.login__form {
      .login__form div.login__input{
         width: 50%;
     }
-    .login__form #login-submit{
-        width: 20%;
+    .file__btn{
+        font-size: 12px;
     }
     .register__body {
         background-color: #fff;
@@ -127,8 +135,16 @@ form.login__form {
     }
 }
 @media (min-width: 1024px) {
-    .login__form #login-submit:hover {
+    .file__btn:hover {
+        background-color: #0022AA;
+        cursor: pointer;
+    }
+    .file__btn:active{
+        transform: scale(0.95);  
+    }
+    .register__btn [type="submit"]:hover,
+    .register__btn [type="reset"]:hover {
     background-color: #0022AA;
     cursor: pointer;
-}
+    } 
 }

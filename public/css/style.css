@@ -178,6 +178,7 @@ body{
     background-color: #FFF;
     top: -32px;
     right: 10px;
+    transition: transform 0.4s;
 }
 .precios {
     font-size: 18px;
@@ -341,7 +342,7 @@ footer.footer{
     right: 10px;
 }
 .truck__icon i:hover {
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
 }
 .precios,
 .descuento {

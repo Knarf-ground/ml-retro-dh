@@ -40,51 +40,55 @@
          </div>
      </header>
 
-<main class="register__container">
-    <form class="form" action="/registro" method="POST">
-                <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required>
-                <input type="text" name="username" id="username" placeholder="Nombre de usuari@" pattern="[A-Za-z]{4-12}" title="Maximo de 12 caracteres" required> 
-                <input type="mail" name="email" id="email" placeholder="E-mail" required> 
-                <label for="birthdate" class="title__label">Fecha de nacimiento</label>
-                <input type="date" name="birthdate" id="birthdate" max="2005-07-18" required>
-                <input type="text" name="adress" id="adress" placeholder="Domicilio">
-                <label for="profile" class="title__label">Perfil de usuario</label>
-                <div class="user__profile">
-                    <input type="radio" name="profile" value="Compra" checked>
-                    <label for="profile">Compra</label>
-                    <input type="radio" name="profile" value="Venta">
-                    <label for="profile">Venta</label>
-                </div>
-                <label for="interest" class="title__label">Categorías de interés</label>
-                    <div class="user__interest">
+    <main class="register__container">
+        <form class="form" action="/registro" method="POST">
+            <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required>
+            <input type="text" name="username" id="username" placeholder="Nombre de usuari@" pattern="[A-Za-z]{4-12}" title="Maximo de 12 caracteres" required> 
+            <input type="mail" name="email" id="email" placeholder="E-mail" required> 
+            <label for="birthdate" class="title__label">Fecha de nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate" max="2005-07-18" required>
+            <input type="text" name="adress" id="adress" placeholder="Domicilio">
+            <label for="profile" class="title__label">Perfil de usuario</label>
+            <div class="user__profile">
+                <input type="radio" name="profile" value="Compra" checked>
+                <label for="profile">Compra</label>
+                <input type="radio" name="profile" value="Venta">
+                <label for="profile">Venta</label>
+            </div>
+            <label for="interest" class="title__label">Categorías de interés</label>
+                <div class="user__interest">
                     <div class="input__div">
-                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Electro">
+                        <input type="checkbox" class="interest__input" name="interest" value="Electro">
                         <label for="interest" class="interest__label">Electro</label>
                     </div>
                     <div class="input__div">
-                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Moda">
+                        <input type="checkbox" class="interest__input" name="interest" value="Moda">
                         <label for="interest" class="interest__label">Moda</label>
                     </div>
                     <div class="input__div">
-                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Hogar">
+                        <input type="checkbox" class="interest__input" name="interest" value="Hogar">
                         <label for="interest" class="interest__label">Hogar</label>
-                    </div><div class="input__div">
-                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Jugueteria">
+                    </div>
+                    <div class="input__div">
+                        <input type="checkbox" class="interest__input" name="interest" value="Jugueteria">
                         <label for="interest" class="interest__label">Juguetería</label>
                     </div>
                     <div class="input__div">
-                        <input type="checkbox" class="interest__input" name="interest" id="interest" value="Vida sana">
+                        <input type="checkbox" class="interest__input" name="interest" value="Vida sana">
                         <label for="interest" class="interest__label">Vida sana</label>
                     </div>
                 </div>
-                <label for="avatar" class="user__avatar">Foto de usuario</label>
-                <input type="file" name="avatar" id="avatarBtn" accept="jpg png">
-                <label for="avatarBtn" class="file__btn">Cargar Imagen</label>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <input type="password" name="password" placeholder="Confirmar contraseña" required>
-                <input type="submit" value="Enviar" id="register__submit">
-            </form>
-        </main>
+            <label for="avatar" class="user__avatar">Foto de usuario</label>
+            <input type="file" name="avatar" id="avatarBtn" accept="jpg png">
+            <label for="avatarBtn" class="file__btn">Cargar Imagen</label>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="password" name="password" placeholder="Confirmar contraseña" required>
+            <div class="register__btn">
+                <input type="submit" value="Enviar" id="registerSubmit">
+                <input type="reset" value="Borrar" id="registerDelete">
+            </div>
+        </form>
+    </main>
         <footer class="footer">
             <section class="footer__section">
                 <div class="credit__card">
